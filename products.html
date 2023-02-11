@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/products.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Nav -->
+    <nav class="mynavbar">
+      <div class="navbar">
+        <div class="container flex">
+          <span class="text-primary"
+            ><i class="fas fa-pizza-slice"></i>
+            <h1 class="myh1">Hawaii Pizza</h1>
+          </span>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a class="active" href="products.html">Products</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <div class="col">
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#cart"
+        >
+          Cart (<span class="total-count"></span>)</button
+        ><button class="clear-cart btn btn-danger">Clear Cart</button>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://i.postimg.cc/1zBX1tPB/product1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Hawaii 1</h4>
+              <p class="card-text">Price: SEK 150</p>
+              <a
+                href="#"
+                data-name="Hawaii1"
+                data-price="150"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://i.postimg.cc/wjcTDvtz/product12.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Hawaii 2</h4>
+              <p class="card-text">Price: SEK 155</p>
+              <a
+                href="#"
+                data-name="Hawaii2"
+                data-price="155"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://i.postimg.cc/NjwjyTjb/product10.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Hawaii 3</h4>
+              <p class="card-text">Price: SEK 199</p>
+              <a
+                href="#"
+                data-name="Hawaii3"
+                data-price="199"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://i.postimg.cc/P5Zv9TPV/product4.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Hawaii 4</h4>
+              <p class="card-text">Price: SEK 150</p>
+              <a
+                href="#"
+                data-name="Hawaii4"
+                data-price="150"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://i.postimg.cc/y6QRSLMj/product5.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Hawaii 5</h4>
+              <p class="card-text">Price: SEK 155</p>
+              <a
+                href="#"
+                data-name="Hawaii5"
+                data-price="155"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://i.postimg.cc/25DLfMWk/product6.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Hawaii 6</h4>
+              <p class="card-text">Price: SEK 199</p>
+              <a
+                href="#"
+                data-name="Hawaii6"
+                data-price="199"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://i.postimg.cc/RVJWJ4QC/product7.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Hawaii 7</h4>
+              <p class="card-text">Price: SEK 150</p>
+              <a
+                href="#"
+                data-name="Hawaii7"
+                data-price="150"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://i.postimg.cc/QtNBF7Sv/product8.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Hawaii 8</h4>
+              <p class="card-text">Price: SEK 155</p>
+              <a
+                href="#"
+                data-name="Hawaii8"
+                data-price="155"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="https://i.postimg.cc/nrjhmGmS/product9.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-block">
+              <h4 class="card-title">Hawaii 9</h4>
+              <p class="card-text">Price: SEK 299</p>
+              <a
+                href="#"
+                data-name="Hawaii9"
+                data-price="199"
+                class="add-to-cart btn btn-primary"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="cart"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table"></table>
+            <div>Total price: $<span class="total-cart"></span></div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Order now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="site.js"></script>
+    <link rel="stylesheet" href="./css/products.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  <footer>
+      <div class="container grid-3">
+        <div class="copyright">
+          <h1>Hawaii Pizza</h1>
+          <p>Copyright &copy; 2023</p>
+        </div>
+        <nav class="links"></nav>
+        <div class="profiles">
+          <a href="https://twitter.com/A_HawaiianPizza"
+            ><em class="fab fa-twitter fa-2x"></em
+          ></a>
+          <a href="https://www.instagram.com/hawaiipizzacompany/"
+            ><em class="fab fa-instagram fa-2x"></em
+          ></a>
+          <a href="https://www.facebook.com/profile.php?id=100069096526991"
+            ><em class="fab fa-facebook fa-2x"></em
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </div>
+</html>

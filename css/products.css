@@ -1,0 +1,427 @@
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0
+}
+
+ header {
+        background: #333 url('../images/hawaii.jpg') no-repeat center
+          center/cover;
+        color: #fff;
+        text-align: center;
+        padding: 0;
+        padding-top: 0vh;
+        height: 100vh;
+      }
+body {
+  font-family: "lato", sans-serif;
+  color: white;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+
+h2 {
+  font-size: 25px;
+  font-weight: 300;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+footer {
+  background-color: rgb(50, 89, 187);
+  padding-bottom: 0cm;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: #9867C5;
+  border-bottom: 2px solid #9867C5;
+}
+
+/* Classes */
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: visible;
+}
+
+.mynavbar {
+  background-color: #0077B5;
+  height: 70px;
+  padding: 0 0 0 0;
+}
+
+.myh1 {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 10px 0;
+  line-height: 1.2;
+  color:aliceblue;
+}
+
+.mynavbar .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.mynavbar ul {
+  display: flex;
+}
+
+.mynavbar ul li a.active {
+  border-bottom: #2196f3 solid 2px;
+}
+
+.mynavbar a {
+  color: white;
+  padding: 9px;
+  margin: 0 10px;
+}
+
+.mynavbar a:hover {
+  color: #9867C5;
+  border-bottom: 3px solid #9867C5;
+}
+
+.modal {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* Style the modal header */
+.modal-header {
+  padding: 10px 16px;
+  background-color:rgb(26, 61, 168);
+  color: white;
+}
+
+/* Style the modal body */
+.modal-body {
+  padding: 10px 16px;
+  color:#333
+}
+.modal-table td {
+    color: black;}
+/* Style the modal footer */
+.modal-footer {
+  padding: 10px 16px;
+  color: white;
+  text-align: center;
+}
+
+/* Style the close button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.grid-item-1,
+.grid-item-2 {
+  position: relative;
+  top: 50px;
+}
+
+.grid {
+  overflow: visible;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+
+.showcase input[type='email'] {
+  padding: 10px 70px 10px 0;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  padding-left: 6px;
+}
+
+.button1 {
+  border-radius: 6px;
+  padding: 12px 20px;
+  background:deepskyblue;
+  border: none;
+  margin-left: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+button2 {
+  border-radius: 6px;
+  padding: 12px 20px;
+  background:darkgreen;
+  border: none;
+  margin-left: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.showcase-form {
+  margin: auto;
+}
+
+.little-info {
+  font-size: 15px;
+  font-family: "poppins", sans-serif;
+
+}
+
+.lower-container {
+  margin: 120px auto;
+  padding: 0;
+  max-width: 1400px;
+  text-align: center;
+}
+
+
+.title {
+  color: black;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.text {
+  color: black;
+  font-size: 19px;
+  width: 100%;
+  padding: 10px;
+  margin: 0, 20px;
+  text-align: justify;
+
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.stats {
+  padding: 45px 50px;
+  text-align: center;
+}
+
+.stat {
+  margin: 0 30px;
+  text-align: center;
+  width: 800px;
+}
+
+.stats .fa {
+  color: skyblue;
+}
+
+.testimonial {
+  color: black;
+  padding: 40px;
+}
+
+.testimonial img {
+    height: 100%;
+    clip-path: circle();
+}
+
+.testimonial h3{
+  text-align: center;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.card {
+  padding: 20px;
+  background-color:whitesmoke;
+  display:60%;
+  border-radius: 10px;
+  box-shadow: -7px -7px 20px rgba(0, 0, 0, 0.2),
+               7px  7px 20px rgba(0, 0, 0, 0.2)
+}
+h4.card-title {
+  color: black;
+}
+p.card-text {
+  color: black;
+}
+
+.circle {
+    background-color: transparent;
+    border:3px solid purple;
+    height:90px;
+    position: relative;
+    top: -30px;
+    left: 120px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:90px;
+}
+
+/* Tablets and Under */
+@media(max-width: 768px) {
+  .grid,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+footer {
+    height: auto;
+  }
+  .stats .flex {
+    flex-direction: column;
+  }
+
+  .stats {
+    text-align: center;
+  }
+
+  .image {
+    width: 600px;
+    margin-left: 80px;
+  }
+
+  .stat {
+    width: 100%;
+    padding-right: 80px;
+  }
+
+  .circle {
+      background-color: transparent;
+      border:3px solid purple;
+      height:90px;
+      position: relative;
+      top: -30px;
+      left: 270px;
+      border-radius:50%;
+      -moz-border-radius:50%;
+      -webkit-border-radius:50%;
+      width:90px;
+  }
+
+  .showcase {
+    height: auto;
+    text-align: center;
+  }
+
+
+}
+
+/* Mobile devices */
+@media(max-width: 500px) {
+  .mynavbar {
+    height: 100px;
+  }
+footer {
+  padding-bottom: 0cm;  
+  height: auto;
+  }
+  .mynavbar .flex {
+    flex-direction: column;
+  }
+
+  .mynavbar a:hover {
+    color: white;
+    border-bottom: 2px solid black;
+  }
+
+  .mynavbar ul {
+    background: #9867C5;
+    border-radius: 5px;
+    padding: 10px 0;
+  }
+.modal {
+    /* styles for mobile devices */
+    width: 80%;
+    height: auto;
+    overflow: auto;
+    margin: 20px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .showcase {
+    height: auto;
+    text-align: center;
+  }
+
+  .little-info {
+    font-size: 13px;
+  }
+
+  .image {
+    width: 350px;
+    margin-left: 70px;
+  }
+
+  .stat {
+    margin-bottom: 40px;
+  }
+
+  .circle {
+      background-color: transparent;
+      border:3px solid #0077B5;
+      height:90px;
+      position: relative;
+      top: -30px;
+      left: 150px;
+      border-radius:50%;
+      -moz-border-radius:50%;
+      -webkit-border-radius:50%;
+      width:90px;
+  }
+}
