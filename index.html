@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -13,6 +14,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    z
   </head>
   <body>
     <header>
@@ -41,6 +43,29 @@
         <h1 style="background-color: rgba(210, 210, 25, 0.843)">
           Welcome to Hawaii Pizza
         </h1>
+      </div>
+      <div id="weather"></div>
+      <div class="lower-container container">
+        <script>
+          const apiUrl =
+            "https://api.openweathermap.org/data/2.5/weather?q=Hawaii,us&appid=f12cbb31d5db5882b5056295ebc1a23a";
+
+          $.ajax({
+            url: apiUrl,
+            type: "GET",
+            success: function (data) {
+              const weatherData = data.weather[0];
+              const weatherContainer = $("#weather");
+              const temperature = (data.main.temp - 273.15).toFixed(2);
+              weatherContainer.html(`
+          <p style="color:lightskyblue;">Hawaii now: ${weatherData.main} , temp:${temperature} &#8451;</p>
+        `);
+            },
+            error: function (error) {
+              console.error(error);
+            },
+          });
+        </script>
       </div>
     </header>
     <footer>
